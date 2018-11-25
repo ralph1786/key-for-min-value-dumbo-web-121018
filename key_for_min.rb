@@ -9,14 +9,14 @@ def key_for_min_value(name_hash)
     name_hash.each{ |key, value|
       array << value
     }
-    small_number = array[0]
+    smallest_value = array[0]
     array.each { |value|
-      small_number = value if value < small_number
+      smallest_value = value if value < smallest_value
     }
-    name_hash.each do |key, value|
+    name_hash.each { |key, value|
       if min_num == value
         return key
       end
-    end
+    }
   end
 end
