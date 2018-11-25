@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
       new_array << value
     }
     smallest_value = new_array[0]
-    array.each { |value|
+    new_array.each { |value|
       smallest_value = value if value < smallest_value
     }
     name_hash.each { |key, value|
