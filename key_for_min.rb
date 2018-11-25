@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     return nil
   else
     new_array = []
-    name_hash.each{ |key, value|
+    name_hash.map{ |key, value|
       new_array << value
     }
     smallest_value = new_array[0]
