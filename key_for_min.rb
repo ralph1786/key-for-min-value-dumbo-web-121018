@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
     new_array.map { |value|
       smallest_value = value if value < smallest_value
     }
-    name_hash.each { |key, value|
+    name_hash.map { |key, value|
        if smallest_value == value  
          return key
        end
